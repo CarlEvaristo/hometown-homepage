@@ -4,9 +4,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    padding: 40px 0;
-    height: 450px;
+.container {
+    max-width: 720px;
+    overflow: hidden;
+    width:90%;
+    margin: 40px auto;
+    border: #fff 8px solid;
+    border-radius: 50px;
+    box-shadow: 4px 4px 7px gray;
+}
+
+.heading {
+    padding: 80px 0;
     color: #fff;
     display:flex;
     flex-direction: column;
@@ -19,26 +28,27 @@ header {
 }
 
 h1, h2 {
-    margin-top: 0;
+    margin: 0;
 }
 h1 {
     display: inline;
     background-color: #1D3557;
     padding:10px 20px;
     border-radius:6px;
+    box-shadow: 2px 5px 5px rgb(100, 100, 100);
 }
 
 .subtitle {
-    margin-top:45px;
+    margin-top:25px;
     background-color: #457B9D;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius:6px;
-    font-size: 20px;
+    font-size: 18px;
+    box-shadow: 2px 5px 5px rgb(100, 100, 100);
 }
 
 main {
     padding: 40px 0;
-    height: 450px;
     color: #1D3557;
     background-color: #F1FAEE;
     ;
@@ -47,6 +57,42 @@ h2 {
     color: #1D3557;
 }
 .activity-container {
+    margin-top: 50px;
     display:flex;
     justify-content: space-evenly;
+}
+.activity {
+    width: 33.33%;
+    margin: 15px;
+}
+.activity-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.footer {
+    padding: 40px 0;
+    background: #fff;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url("images/boulder-creek-map.jpg");
+    background-size: cover;
+    background-position: center;    
+}
+.footer-card {
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    margin:0 auto;
+    background-color: #fff;
+    box-shadow: 0px 10px #1D3557;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-img {
+    width: 30%;
+}
+
+.text-wrapper {
+    width: 70%;
+    padding-left:20px;
 }
